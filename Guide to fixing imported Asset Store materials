@@ -1,0 +1,9 @@
+sometimes when you import an asset from the Unity Asset Store, the materials will be all messed up. 
+if this is the case, the materials will appear pink
+in order to fix this, do the following
+1. view the messed up material in the Inspector
+2. right click up at its name at the very top and  "Copy Material Properties"
+3. right click in the project assets and "Create" a new "Material" and view it in the Inspector
+4. right click on the name of the new material in the Inspector and click "Paste Material Properties"
+5. if the new material is not exactly how it should be, try moving the textures that match the ones being used in the origional broken material
+    in the "Albedo" slot in the "Basemap" slot of the new material. Be sure to use the texture directly from the actual file in the folder
