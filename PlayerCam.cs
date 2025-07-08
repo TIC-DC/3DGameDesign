@@ -5,6 +5,8 @@ using UnityEngine.InputSystem;
 
 //generic camera script, usable for first and third person cameras
 //NOTE: this uses the OLD input system. To fix any potential errors, go to project settings -> Player -> Other Settings -> Active Input Handling -> Both
+//NOTE: if the camera begins jittering and freaking out when the player touches on object in the world, be sure to lock all rotation of the Player's Rigidbody
+    //Rigidbody -> Constraints - > Rotation, click all three boxes
 //this script should be a component of a child object of the player, the camera should be a child of that child
 //Like So:
 //Player
@@ -12,7 +14,7 @@ using UnityEngine.InputSystem;
         //camera
 //For first person, put camera mount in the player's head, or slightly in front, 0,0,0 rotation
 //For third person, put camera mount behind and above the player (negative z, position y) with a negative X rotation around 15
-public class playerCam : MonoBehaviour
+public class PlayerCam : MonoBehaviour
 {
     //these are the values for look sensitivity. they should be set in the inspector
     //[SerializeField]
